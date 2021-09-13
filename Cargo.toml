@@ -1,0 +1,13 @@
+[package]
+name = "tungstenite-ws-proxy"
+version = "0.1.0"
+authors = ["nikoladg <nikola@deepgram.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures-util = { version = "0.3", default-features = false, features = ["async-await", "sink", "std"] }
+tokio = { version = "1.0.0", default-features = false, features = ["macros", "rt-multi-thread"] }
+tokio-tungstenite = "0.15.0"
+tungstenite = "0.14.0"
